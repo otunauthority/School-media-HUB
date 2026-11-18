@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Theological Seminary - Media Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <img src="images/Gemini_Generated_Image_jms01fjms01fjms0.jpg" alt="Life Theological Seminary Logo" class="logo">
+      <div>
+        <h1>Media Library</h1>
+        <p>Download and play LTS day videos and audio files</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search by title or subject...">
+      
+      <select id="typeFilter">
+        <option value="all">All Types</option>
+        <option value="video">Videos only</option>
+        <option value="audio">Audios only</option>
+      </select>
+
+      <select id="subjectFilter">
+        <option value="all">All Media</option>
+        <option value="Theology">Sermons</option>
+        <option value="Social Ministry">Social Ministry</option>
+        <option value="Voice of Life">VOICE OF LIFE</option>
+      
+      </select>
+    </div>
+
+    <div id="mediaGrid" class="media-grid"></div>
+    <p id="noResults" class="no-results" style="display: none;">No files found matching your search.</p>
+  </main>
+
+  <!-- PLAYER MODAL -->
+  <div id="playerModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <div id="playerContainer"></div>
+      <a id="modalDownload" class="download-btn" download>Download File</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>Life Theological Seminary in West Africa • Since 1955 • For enrolled students only</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
